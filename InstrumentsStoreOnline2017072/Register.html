@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Instruments/Register</title>
+        <link rel="stylesheet" href="stylesheetform.css">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="icon" href="img/icono.jpg" >
+    </head>
+    <body>
+            <div class="header">
+                    <input type="checkbox" id="btn-menu">
+                    <label for="btn-menu"><img src="img/iconomenu.png" alt=""></label> 
+                
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li class="submenu"><a href="Categories.html">Categorias</a>
+                                <ul>
+                                    <li><a href="">Viento</a></li>
+                                    <li><a href="">Percusión</a></li>
+                                    <li><a href="">Cuerdas</a></li>
+                                    <li><a href="">Sonido</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Products.html">Productos</a></li>
+                            <li><a href="Contactus.html">Contactanos</a></li>
+                            <li><a href="CarritoDeCompras.html"><img src="img/carritoCompras.jpg"  rel="carritoDeCompras" ></a></li>
+                            <li><a href="Error404.html">Error404!</a></li>
+                           
+                        </ul>
+                    </nav>
+            </div>  
+
+            <form class="register" action="HomePage.html" method="POST">
+                <h1>Register</h1>   
+                <input type="text" placeholder="Firs Name" name="firsname" autofocus required = true >
+                <input type="text" placeholder="Last Name" name="lastname" required >                
+                <input type="text" placeholder="User" name="user" required >
+                <input type="text" placeholder="Email" name="email" required>
+                <input type="text" placeholder="Phone" name="phone" required>
+                <input type="password" placeholder="Password" name="password" required >
+                <input type="password" placeholder="Confirm Password" name="confirmpassword" required >
+
+                <a  href="index.html"><input type="submit" value="Register Now" name="submit"></a>
+            </form>
+
+            <div class="aside">
+                <label>Instruments STORE!</label> 
+                <hr class="v"/>  
+                <label>Tus instrumetos de la mejor calidad!</label>
+            </div>
+
+    </body>
+</html>

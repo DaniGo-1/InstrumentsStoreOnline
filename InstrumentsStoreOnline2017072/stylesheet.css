@@ -1,0 +1,521 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; 
+    min-height: 100vh;  
+   /* background: url(img/fondoRegister.jpg)  center top*/
+}
+
+.titulo{
+    padding: 15px;
+    margin: 0;
+    color: white;
+    text-shadow: 5px 5px 5px rgb(19, 17, 17);
+    text-align: center;
+    background: url(img/encabezado.jpg)  center top;
+    background-repeat:no-repeat;
+    background-size: 100%;
+}
+
+
+.nav1 ul{
+    margin: 0;
+    margin-left: 60%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    background: bisque;
+    justify-content: center;
+}
+
+.nav1 a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+.nav1 a{
+    display: block;
+
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav1 {
+    background: bisque;
+}
+
+
+/*
+#search, button{
+    float: left;
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+#search {
+    width: 350px;
+}
+
+#buscador button:hover{
+    background-color: gray; 
+}
+
+#buscador{
+    float: right;
+    padding: 7.7px;    
+}
+*/
+
+
+/*CARRUSEL*/
+
+.slider{
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: cambio 25s infinite alternate;
+    animation-timing-function: ease-in;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+}
+
+
+@keyframes cambio {
+    0% { margin-left: 0;}
+    15% { margin-left: 0;}
+
+    20% { margin-left: -100%}
+    35% { margin-left: -100%}
+
+    40% { margin-left: -200%}
+    55% { margin-left: -200%}
+
+    60% { margin-left: -300%}
+    75% { margin-left: -300%}
+
+    80% { margin-left: -400%}
+    100% { margin-left: -400%}
+}
+
+/*----------------------------------------------------------------------*/
+
+/*MENU PRINCIPAL*/
+
+.header{
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+}
+
+#btn-menu{
+    display: none;
+}
+
+.header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+.header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3)
+} 
+
+.menu ul{
+    margin: 0;
+    margin-left: 12%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    background: rgb(27, 27, 27);
+}
+
+.menu a:hover:not(.active){
+    background: rgba(0,0,0,0.3);
+}   
+
+.menu a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a img{
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    display: block;
+}
+
+.active {
+    background-color: #4CAF50;
+  }
+
+/*SUB MENUS*/
+
+.menu ul ul{
+    display: none; 
+}
+
+.menu ul li:hover ul{
+   display: block;
+   position: absolute;
+   margin-left: 0px;
+   
+}
+
+/*Uso del menu en pantalla pequeña*/
+
+@media (max-width:768px){
+    .header label{
+        display: block;
+    }
+
+    
+    .menu {
+        z-index: 2;
+        position: absolute;
+        background: #4E94AB;
+        width: 65%;
+        margin-left: -65%;
+        transition: all 0.5s;        
+        
+    }
+
+    .menu ul{
+        flex-direction: column;
+        background: rgb(26, 70, 94);
+        margin-left: 0;
+    }
+
+    .menu ul li:hover ul{
+       position: static;
+        background: rgb(4, 29, 37)
+    }
+    
+    /* ~(alt + 126)  virvuliya cuando tenga el check busca a la clase menu*/
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+}
+
+/*--------------------------------------------------------------------*/
+
+/*SECTION DE INSTRUMENTOS*/
+
+.contenedorPrincipal{
+    margin: auto;
+    width: 70%;
+}
+
+.sectionPrincipal img{
+    margin: 2%;
+    width: 15%;
+    border: 1px solid #b4b4b4;
+}
+
+.sectionPrincipal img:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+}
+
+
+
+/*PIE DE PAGINA*/
+
+.contenedorPrincipal .footer a:hover{
+    background: rgba(206, 206, 206, 0.993)
+}
+
+
+/*PAGINA CATEGORIAS*/
+
+.contenedorCategorias{
+    margin: auto;
+    width: 1170px;
+    height: auto;
+}
+
+/*PARA LOS ENLACES DE IMAGNES*/
+
+.sectionCategorias a{
+    text-decoration: none;
+    color: rgb(39, 142, 177);
+}
+
+.sectionCategorias a:hover{
+    color: rgb(38, 50, 153);
+}
+
+    /*SUB CATEGORIAS NAV3*/
+
+.nav3 ul{
+    list-style: none;
+    float: left;
+    flex-direction: column;
+    background: rbga(0, 0, 0,0.3);
+}
+
+.nav3 a{
+    display: block;
+    padding: 15px 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.nav3 a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.nav3 h3{
+    padding-top: 25px;
+    margin-left: 13.2%;
+    margin-top: 0px;
+}
+
+.nav3{    
+    background: rgb(185, 185, 185);    
+    width: 220px;
+    height: 1000px;
+}
+
+    /*---CONTENIDO---*/
+    
+
+.sectionCategorias{    
+    float: right;
+    width: 81.2%;
+    height: auto;
+    margin: auto; 
+}
+
+.sectionCategorias  #cero, #uno, #dos, #tres, #cuatro, #cinco, #seis, #siete,#ocho{
+    float: left;
+    margin-left: 50px;
+}
+
+.sectionCategorias p{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.sectionCategorias h3{
+    padding-top: 25px;
+    margin-top: 0px;
+    margin-left: 50px;
+}
+
+.sectionCategorias img{
+    margin-top: 20px;
+    margin-right: 28px;
+}
+
+.sectionCategorias img:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+}
+@media (max-width:1180px){
+    .sectionCategorias{
+        float: left;
+        padding-left: 30px;
+    }
+    .contenedorCategorias{
+        width: 100%;
+    }
+
+    .sectionCategorias{
+        margin: auto;   
+        width: 96%;
+    }
+    .nav3{
+        display: none;
+    }
+    .sectionCategorias img{
+        margin-left: 2%;
+        width: 100%;
+    }
+}
+
+/*----------------------------------------------------------------------*/
+
+/*NAV CARRITO DE COMPRAS*/
+
+.contenedorCarrito{
+    margin: auto;
+    width: 70%;
+}
+
+.contenedorCarrito #titulo2, #comentario{
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+.contenedorCarrito input[type="button"]{
+    background: #4CAF50 ;
+    border: 0;
+    color: rgb(255, 255, 255);
+    cursor: pointer; 
+    border-radius:4px;
+    margin-bottom: 0; 
+    padding: 10px; 
+    margin-left: 44.5%;   
+    margin-bottom: 500px;
+    display: block;
+}
+
+.contenedorCarrito input[type="button"] , a{
+    text-decoration: none;
+}
+
+.contenedorCarrito  input[type="button"]:hover{
+    background: rgba(0, 0, 0, 0.7);  
+}
+
+.navCarrito ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    background: rgb(9, 25, 70);
+}
+
+.navCarrito a:hover:not(.active){
+    background: rgba(0, 0, 0, 0.3);
+}   
+
+.navCarrito a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#activeCarrito{
+    background: rgb(4, 17, 53);
+}
+
+/*CONTENEDOR PERFIL*/
+.contenedorPerfil{
+    margin: auto;
+    width: 70%;
+    height: auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.datos button{
+    border: none;
+    display: block;
+    padding: 8px;
+    color: white;
+    background-color: #4CAF50;
+    text-align: center;
+    cursor: pointer;
+    width: 150px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.datos p{
+    text-align: center;
+    font-size: 25px; 
+    color: beige;   
+    margin-bottom: 20px;
+}
+
+.datos h1{
+    text-align: center;
+    font-size: 40px;
+    color: beige;
+    margin-bottom: 20px;
+}
+
+.datos a{
+    text-decoration: none;
+}
+
+.datos  button:hover, a:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.datos{
+    margin: auto;   
+    box-sizing: border-box;  
+    margin-top: 10px;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    padding-right: 50px;
+    border-radius:20px;
+}
+
+
+.centrado{
+	margin:10px auto;
+	display:block;
+}
+/*----------------------------------------------*/
+
+.error404{
+    background: rgba(0,0,0,0.5);    
+    display: flex;
+    margin-top: 5%;    
+}
+
+.error404 label{
+    color: white;    
+    font-size: 60px; 
+    padding: 130px;
+    margin: 0px auto;
+}
+
+.error404 hr{
+    width: 1px;
+    height: 150px;
+    margin-top: 5%;
+}
+
+/*----------------------------------------------*/
+.aside{
+    color: white;
+    width: 550px;
+    margin: 0;
+    font-size: 30px; 
+    padding: 70px 50px;
+    background: rgba(0,0,0,0.5);    
+    display: flex;
+    margin-top: 2%;   
+}
+
+.aside hr{
+    width: 1px;
+    height: 100px;
+    margin-top: -18px;
+    margin-bottom: -30px;
+    margin-left: 40px;
+    padding: 0px;
+}
+
+.aside label{
+    margin-left: 35px;
+}
+/*---------------------------------------*/

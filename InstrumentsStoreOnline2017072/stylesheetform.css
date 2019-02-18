@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;    
+}
+
+body{
+    background:  url(img/fondo\ prueba.jpg) center top ;  
+    background-repeat:no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/*filter: blur(6px);*/
+
+
+.aceptCheck [type="checkbox"]{
+    display: none;
+}
+
+.aceptCheck label{
+    padding-left:  1.3em;
+    position: relative;
+    color: white;
+}
+
+.aceptCheck label:before{
+    content: '';
+    border: solid 1px #5a5a5a;
+    border-radius: 3px;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    left: 0; 
+}
+
+.aceptCheck [type="checkbox"]:checked + label::before{
+    content: '!!!';    
+}
+
+
+/*--------------------------------------------------------------------*/
+
+.login{
+    box-sizing: border-box;  
+    margin: auto;
+    margin-top: 6%;
+    width: 25%;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius:10px;
+    padding: 20px;   
+}
+
+
+.login input[type="submit"]{
+    background: linear-gradient(#FFDA63, #FFB948);
+    border: "0";
+    color: brown;
+    opacity: 0.9;
+    cursor: pointer; 
+    border-radius:5px;  
+    margin: 30px auto;  
+}
+
+.login input[type="submit"]:hover{
+    opacity: 1;
+}
+    
+.login input[type="submit"]:active{
+    transform: scale(0.95)
+}
+
+.login input{
+    display: block;
+    padding: 8px;
+    width: 90%;
+    margin: 40px auto;
+    font-size: 15px;
+    border-radius:5px;
+    border: none;
+    background: white;
+}
+
+.login h1{
+    text-align: center; 
+    color: white;
+}
+
+.login a{
+    text-decoration: none;
+    color: white;
+    margin: auto 25px;
+}
+
+.login a:hover{
+    background: rgba(0, 0, 0, 0.1);
+    color: rgb(65, 65, 65);
+}
+
+
+/*Media*/
+
+@media (max-width:1000px){
+    .login{
+        width: 75%;
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width:480px){
+    .login{
+        width: 95%;
+    }
+}
+
+
+/*----------------------------------------------------------------*/
+
+
+.register{
+    box-sizing: border-box;  
+    margin: auto;
+    margin-top: 6%;
+    width: 35%;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius:10px;
+    padding: 20px;   
+}
+
+.register input[type="submit"]{
+    background: linear-gradient(#FFDA63, #FFB948);
+    border: "0";
+    color: brown;
+    opacity: 0.9;
+    cursor: pointer; 
+    border-radius:5px;  
+    margin: 30px auto;   
+}
+
+.register input[type="submit"]:hover{
+    opacity: 1;
+}
+    
+.register input[type="submit"]:active{
+    transform: scale(0.95)
+}
+
+.register input, textarea{
+    display: block;
+    padding: 8px;
+    width: 90%;
+    margin: 20px auto;
+    font-size: 15px;
+    border-radius:5px;
+    border: none;
+    background: white;
+}
+
+.register h1{
+    text-align: center; 
+    color: white;
+}
+
+.register a{
+    text-decoration: none;
+}
+/*Media*/
+
+@media (max-width:1000px){
+    .register{
+        width: 75%;
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width:480px){
+    .register{
+        width: 95%;
+    }
+}
+
+/*--------------------------------------------------------*/

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Instruments/Carrito</title>
+        <link rel="stylesheet" href="stylesheet.css"/>
+        <link rel="icon" href="img/icono.jpg" >
+    </head>
+
+    <body>
+
+        <div class="nav1">
+               <!--ABRE LA VENTA EN UN NUEVO NAVEGADOR <a onclick="window.open( 'Login.html', 'Login', 'width=200', 'height=200',)">Ingresar</a>-->
+            <ul>
+                <li><a href="Login.html">Ingresar</a><li>
+                <li><a href="Register.html">Registrar</a></li>    
+            </ul>                      
+        </div>
+    
+        <div class="header">
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu"><img src="img/iconomenu.png" alt=""></label> 
+        
+            <nav class="menu">
+                <ul class="activee">
+                    <li ><a  href="index.html">Inicio</a></li>
+                    <li class="submenu"><a href="Categories.html">Categorias</a>
+                        <ul>
+                            <li><a href="">Viento</a></li>
+                            <li><a href="">Percusión</a></li>
+                            <li><a href="">Cuerdas</a></li>
+                            <li><a href="">Sonido</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Products.html">Productos</a></li>
+                    <li><a href="Contactus.html">Contactanos</a></li>
+                    <li  class="active"><a href="CarritoDeCompras.html"><img src="img/carritoCompras.jpg"  rel="carritoDeCompras" ></a></li>
+                    <li><a href="Error404.html">Error404!</a></li>
+                   
+                </ul>
+            </nav>
+        </div>  
+        <div class="contenedorCarrito">
+                <div class="navCarrito">
+                     <ul>
+                         <li id="activeCarrito"><a href="">1. Carrito</a><li>
+                         <li><a href="">2. Detalles del pago</a></li>    
+                         <li><a href="">3. Pedido Completado</a></li>  
+                     </ul>                      
+                 </div>
+            <h2 id="titulo2">Carrito De Compras</h2>
+            <p id="comentario">Tu carrito esta vacío.</p>
+            <a id="volver" href="index.html"><input type="button" value="Volver a la tienda"></a>
+
+
+            <hr>        
+            <div class="footer">
+                <h3 style="color:rgb(58, 58, 58)">Contacto</h3>
+
+                <a href="https://www.facebook.com/"  target="_blank"><img rel="icono facebook" src="img/iconoFb.jpg"></a> 
+                <a href="https://twitter.com/?lang=es" target="_blank"><img rel="icono twitter" src="img/iconoTw.jpg"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img rel="icono instagram" src="img/iconoIns.jpg"></a>
+
+                <h4 style="color:rgb(83, 83, 83)">PBX:1111 - 1111</h4>
+            </div>   
+        </div>
+        
+    </body>
+</html>
